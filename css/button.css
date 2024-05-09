@@ -1,0 +1,207 @@
+.boxs{
+    margin: 40px auto;
+}
+
+.area-turn{
+    margin: 0 auto;
+    border: 1px solid #555;
+    background-color: #444;
+    width: 100px;
+    border-radius: 150px;
+    height: 40px;
+}
+
+.turn{
+    background-color: white;
+    height: 80%;
+    width: 30%;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -22px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+}
+
+.mudarnome{
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: -22px;
+    right: 50px;
+    animation-name: mudarparalight;
+    animation-duration: 1.5s;
+}
+
+.mudarnome2{
+    position: relative;
+    top: -22px;
+    right: 15px;
+    animation-name: mudarparadark;
+    animation-duration: 1.5s;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.area-turn-on{
+    border: 1px solid #555;
+    width: 100px;
+    border-radius: 150px;
+    height: 40px;
+    background-color: #444;
+    animation-name: mododark;
+    animation-duration: 1.5s;
+}
+
+
+.area-turn-off{
+    background-color: rgba(255, 82, 188, 0.750000);
+    animation-name: modolight;
+    animation-duration: 1.5s;
+}
+
+
+
+.turon{
+    border-radius: 100%;
+    background-color: white;
+    height: 80%;
+    width: 30%;
+    position: relative;
+    top: 3px;
+    left: 64px;
+    animation-name: turnon;
+    animation-duration: 1.5s;
+}
+
+.turnoff{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    animation-name: turnoff;
+    animation-duration: 1.5s;
+}
+
+.slideleft{
+    filter: opacity(0);
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+.slideright{
+    animation-name: slideright;
+    animation-duration: 1s;
+}
+
+@keyframes slideright {
+    0%{
+        filter: opacity(0);
+    }
+
+    100%{
+        filter: opacity(100%);
+    }
+}
+
+@keyframes slide {
+    0%{
+        filter: opacity(1);
+
+    }
+
+    100%{
+        filter: opacity(0);
+    }
+}
+
+
+
+
+@keyframes mododark{
+    0%{
+        background-color: rgba(255, 82, 188, 0.750000);
+    }
+
+    100%{
+        background-color: #444; 
+    }
+}
+
+@keyframes modolight {
+    0%{
+        background-color: #444;
+    }
+
+    100%{
+        background-color: rgba(255, 82, 188, 0.750000); 
+    }
+}
+
+@keyframes turnoff{
+    0%{
+        position: relative;
+        top: 3px;
+        left: 64px;
+    }
+
+    100%{
+        position: relative;
+        top: 3px;
+        left: 3px;
+    }
+}
+
+
+@keyframes turnon{
+    0%{
+        position: relative;
+        top: 3px;
+        left: 3px;
+    }
+
+    100%{
+        position: relative;
+        top: 3px;
+        left: 64px;
+    }
+}
+
+@keyframes mudarparalight {
+    0%{
+        position: relative;
+        top: -22px;
+        right: 15px;
+    }
+
+    100%{
+        position: relative;
+        top: -22px;
+        right: 50px;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes mudarparadark {
+
+    0%{
+        position: relative;
+        top: -22px;
+        right: 50px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100%{
+        position: relative;
+        top: -22px;
+        right: 15px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
